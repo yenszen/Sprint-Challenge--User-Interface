@@ -307,3 +307,40 @@ footer nav a:hover {
     padding: 10px 10px 35px;
     /* background-color: green; */
 }
+
+/* ------------------------- products page styling (stretch) ---------------------- */
+.banner.product-banner {
+    height: 150px;
+}
+
+.products-upper {
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.products-middle {
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+}
+
+.products-middle div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products-middle img, .products-middle p {
+    width: 48%;
+}
+
+.products-middle p {
+    background-color: rgba(75, 85, 231, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.products-lower {
+    margin: 20px 10px;
+}
