@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+Semantic HTML are HTML tags that has their role in a webpage described in the naming of the tag. This ensures that the elements' purpose are conveyed in an easy-to-understand way for both humans (developers) and machines (browsers). Therefore, these tags carry meaning instead of being randomly and manually assigned meaning to each individual tag with the use of classes and IDs by developers, for which browsers will not be able to interpret accurately.
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+Display block creates a line break whereas display inline does not. Also, display block allows us to set the width and height of the box whereas display inline has its specifications determined by its parent container and cannot be overwritten unless specified as an inline-block.
 
 3. What are the 4 areas of the box model?
 
+The 4 areas of the box model are: content, padding, border and margin. (N.B. described in an outward fashion).
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+Align-items work on the cross axis. Therefore, if flex-direction is set to row, this would align the child elements within the parent container centrally in a vertical fashion. On the other hand, if flex-direction is set to column, its cross axis is now horizontal, therefore "align-items: center" would align the child elements centrally in a horizontal fashion.
+
 5. Explain why git is valuable to a team of developers.
+
+Git is valuable to a team of developers because it keeps track of all the changes made by each individual team members as well as the project changes as a whole. This record-keeping will be useful in the event of having to revert to previous versions. Moreover, it facilitates team collaboration as each team member is able to work on a certain part of the project in unison with the others which saves time.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

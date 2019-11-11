@@ -71,6 +71,58 @@ p {
     margin: 0 auto;
 }
 
+header {
+    display: flex;
+    /* border: 3px solid black; */
+    padding: 15px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 80%;
+    /* border: 3px solid black; */
+}
+
+@keyframes text-odd {
+    from {color: black;}
+    to {color: rgb(243, 40, 40);}
+
+    from {font-size: 1em;}
+    to {font-size: 2em;}
+}
+
+@keyframes text-even {
+    from {color: black;}
+    to {color: blue;}
+
+    from {font-size: 1em;}
+    to {font-size: 2em;}
+}
+
+header nav a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav a:hover:nth-child(odd) {
+    animation-name: text-odd;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
+}
+
+header nav a:hover:nth-child(even) {
+    animation-name: text-even;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
+}
+
+.banner {
+    width: 100%;
+    margin: 20px 0;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -112,6 +164,46 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box.box1 {
+    background-color: teal;
+}
+
+.middle-content .boxes .box.box2 {
+    background-color: gold;
+}
+
+.middle-content .boxes .box.box3 {
+    background-color: cadetblue;
+}
+
+.middle-content .boxes .box.box4 {
+    background-color: coral;
+}
+
+.middle-content .boxes .box.box5 {
+    background-color: crimson;
+}
+
+.middle-content .boxes .box.box6 {
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box.box7 {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box.box8 {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box.box9 {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box.box10 {
+    background-color: dodgerblue;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +235,112 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@keyframes footer-nav {
+    from {color: white;}
+    to {color: red;}
+}
+
+footer nav a:hover {
+    animation-name: footer-nav;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
+}
+
+/* ------------------------------ about page styling ---------------------------------------- */
+.about-top {
+    padding-bottom: 20px;
+    border-bottom: 1px dashed black;
+    /* background-color: grey; */
+}
+
+.about-top .inner-top {
+    margin-left: 15px;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    height: auto;
+    /* background-color: green; */
+}
+
+.gallery .parts {
+    width: 45%;
+    border-bottom: 1px dashed black;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+.gallery .parts h2 {
+    margin: 10px 0;
+}
+
+.gallery .parts button {
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: white;
+    margin-left: 0;
+    margin-top: 15px;
+    width: 30%;
+    height: 2.5em;
+}
+
+@keyframes button {
+    from {background-color: white;}
+    to {background-color: black;}
+
+    from {color: black;}
+    to {color: gold;}
+}
+
+.gallery .parts button:hover {
+    animation-name: button;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
+}
+
+.lowest-content {
+    padding: 10px 10px 35px;
+    /* background-color: green; */
+}
+
+/* ------------------------- products page styling (stretch) ---------------------- */
+.banner.product-banner {
+    height: 150px;
+}
+
+.products-upper {
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.products-middle {
+    border-bottom: 1px dashed black;
+    padding-bottom: 20px;
+}
+
+.products-middle div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.products-middle img, .products-middle p {
+    width: 48%;
+}
+
+.products-middle p {
+    background-color: rgba(75, 85, 231, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+}
+
+.products-lower {
+    margin: 20px 10px;
 }
