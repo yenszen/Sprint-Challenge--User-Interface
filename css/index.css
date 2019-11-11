@@ -85,9 +85,37 @@ header nav {
     /* border: 3px solid black; */
 }
 
+@keyframes text-odd {
+    from {color: black;}
+    to {color: rgb(243, 40, 40);}
+
+    from {font-size: 1em;}
+    to {font-size: 2em;}
+}
+
+@keyframes text-even {
+    from {color: black;}
+    to {color: blue;}
+
+    from {font-size: 1em;}
+    to {font-size: 2em;}
+}
+
 header nav a {
     text-decoration: none;
     color: black;
+}
+
+header nav a:hover:nth-child(odd) {
+    animation-name: text-odd;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
+}
+
+header nav a:hover:nth-child(even) {
+    animation-name: text-even;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
 }
 
 .banner {
@@ -209,6 +237,17 @@ footer nav a {
     text-decoration: none;
 }
 
+@keyframes footer-nav {
+    from {color: white;}
+    to {color: red;}
+}
+
+footer nav a:hover {
+    animation-name: footer-nav;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
+}
+
 /* ------------------------------ about page styling ---------------------------------------- */
 .about-top {
     padding-bottom: 20px;
@@ -248,6 +287,20 @@ footer nav a {
     margin-top: 15px;
     width: 30%;
     height: 2.5em;
+}
+
+@keyframes button {
+    from {background-color: white;}
+    to {background-color: black;}
+
+    from {color: black;}
+    to {color: gold;}
+}
+
+.gallery .parts button:hover {
+    animation-name: button;
+    animation-duration: 1.25s;
+    animation-fill-mode: forwards;
 }
 
 .lowest-content {
