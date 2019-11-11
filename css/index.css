@@ -208,3 +208,43 @@ footer nav a {
     color: white;
     text-decoration: none;
 }
+
+/* ------------------------------ about page styling ---------------------------------------- */
+.top-content.about-top {
+    padding-bottom: 20px;
+}
+
+.top-content.about-top h2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    height: auto;
+    /* background-color: green; */
+}
+
+.gallery .parts {
+    width: 45%;
+    border-bottom: 2px dashed black;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+.gallery .parts button {
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: white;
+    margin: 5px auto;
+    width: 30%;
+    height: 2.5em;
+}
+
+.lowest-content {
+    padding: 20px 10px 35px;
+    /* background-color: green; */
+}
